@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mywebsite
+  namespace: default
+spec:
+  containers:
+  - name: con1
+    image: nginx
+  - name: con2
+    image: docker.io/ramprakashupadhyay123/opesnhift
+  nodeName: node1
+
